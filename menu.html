@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TLC Bakery — Menu</title>
+
+  <!-- Swiper (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">TLC Bakery</div>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="cart.html" class="nav-link">Order</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Daftar Menu</h1>
+    <div id="productGrid" class="grid"></div>
+  </main>
+
+  <!-- cart popup + button -->
+  <div class="cart-wrap">
+    <button class="cart-btn" id="openCartBtn">🛒 Keranjang <span id="cartCount" class="cart-count">0</span></button>
+    <div id="cartPopup" class="cart-popup" aria-hidden="true">
+      <strong>Ringkasan Keranjang</strong>
+      <div id="cartItems" style="margin-top:8px"></div>
+      <div style="margin-top:10px;display:flex;gap:8px;">
+        <button id="viewCart" class="link">Lihat Semua</button>
+        <button id="checkoutNow" class="btn-primary" style="flex:1">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Product data is injected by script.js via products array; script.js will render #productGrid
+    document.addEventListener('DOMContentLoaded', function(){ renderProducts(); });
+  </script>
+</body>
+</html>

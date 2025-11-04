@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Keranjang — TLC Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">TLC Bakery</div>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="cart.html" class="nav-link active">Order</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Keranjang Pesanan</h1>
+    <div id="cartArea"></div>
+
+    <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
+      <button class="btn-primary" id="sendWA">Kirim Pesanan via WhatsApp</button>
+      <button class="btn-outline" id="clearCart">Kosongkan Keranjang</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container center">© <span id="year"></span> TLC Bakery</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
