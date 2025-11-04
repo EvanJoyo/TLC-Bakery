@@ -4,10 +4,10 @@ const CART_KEY = 'tlc_bakery_cart_v1';
 
 // products array (10 products, images from Unsplash as placeholders)
 const products = [
-  { id: 'p1', name: 'Brownies Panggang', desc:'Padat & cokelat pekat.', images:[
+  { id: 'p1', name: 'Brownies Biasa', desc:'Padat & cokelat pekat.', images:[
       'https://images.unsplash.com/photo-1589712235273-8c43b0db6e1f?q=80&w=800',
     ],
-    sizes: [{label:'10x10', price:20000},{label:'10x20',price:50000},{label:'20x20',price:100000}]
+    sizes: [{label:'10x10', price:70000},{label:'10x20',price:100000},{label:'20x20',price:130000}]
   },
   { id: 'p2', name: 'Red Velvet Cake', desc:'Lembut & mewah.', images:[
       'https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=800'
@@ -19,41 +19,41 @@ const products = [
     ],
     sizes:[{label:'Mini',price:15000},{label:'Medium',price:28000},{label:'Large',price:50000}]
   },
-  { id: 'p4', name: 'Cheesecake Lumer', desc:'Creamy dan lembut.', images:[
-      'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800'
-    ],
-    sizes:[{label:'Cup',price:25000},{label:'Medium',price:55000},{label:'Large',price:110000}]
-  },
-  { id: 'p5', name: 'Banana Cake', desc:'Aroma pisang alami.', images:[
-      'https://images.unsplash.com/photo-1617196034796-73b0b9b64ef7?q=80&w=800'
-    ],
-    sizes:[{label:'Mini',price:18000},{label:'Medium',price:40000},{label:'Large',price:80000}]
-  },
-  { id: 'p6', name: 'Chiffon Cake', desc:'Ringan & lembut.', images:[
-      'https://images.unsplash.com/photo-1607958307347-56e0d4e2b1f4?q=80&w=800'
-    ],
-    sizes:[{label:'Mini',price:22000},{label:'Medium',price:48000},{label:'Large',price:95000}]
-  },
-  { id: 'p7', name: 'Cookies Homemade', desc:'Crunchy & manis.', images:[
-      'https://images.unsplash.com/photo-1604908176997-3b6a5abf9f7d?q=80&w=800'
-    ],
-    sizes:[{label:'5 pcs',price:15000},{label:'10 pcs',price:28000},{label:'20 pcs',price:50000}]
-  },
-  { id: 'p8', name: 'Cupcake Vanilla', desc:'Lembut dengan buttercream.', images:[
-      'https://images.unsplash.com/photo-1623428187969-5b3cc23234e0?q=80&w=800'
-    ],
-    sizes:[{label:'1 pcs',price:12000},{label:'6 pcs',price:55000},{label:'12 pcs',price:100000}]
-  },
-  { id: 'p9', name: 'Donut Cokelat', desc:'Glaze cokelat premium.', images:[
-      'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=800'
-    ],
-    sizes:[{label:'1 pcs',price:10000},{label:'6 pcs',price:55000},{label:'12 pcs',price:100000}]
-  },
-  { id: 'p10', name: 'Tiramisu', desc:'Kopi & krim mascarpone.', images:[
-      'https://images.unsplash.com/photo-1617191519105-89d5d1d8a1e0?q=80&w=800'
-    ],
-    sizes:[{label:'Cup',price:25000},{label:'Small Box',price:60000},{label:'Big Box',price:120000}]
-  }
+  // { id: 'p4', name: 'Cheesecake Lumer', desc:'Creamy dan lembut.', images:[
+  //     'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800'
+  //   ],
+  //   sizes:[{label:'Cup',price:25000},{label:'Medium',price:55000},{label:'Large',price:110000}]
+  // },
+  // { id: 'p5', name: 'Banana Cake', desc:'Aroma pisang alami.', images:[
+  //     'https://images.unsplash.com/photo-1617196034796-73b0b9b64ef7?q=80&w=800'
+  //   ],
+  //   sizes:[{label:'Mini',price:18000},{label:'Medium',price:40000},{label:'Large',price:80000}]
+  // },
+  // { id: 'p6', name: 'Chiffon Cake', desc:'Ringan & lembut.', images:[
+  //     'https://images.unsplash.com/photo-1607958307347-56e0d4e2b1f4?q=80&w=800'
+  //   ],
+  //   sizes:[{label:'Mini',price:22000},{label:'Medium',price:48000},{label:'Large',price:95000}]
+  // },
+  // { id: 'p7', name: 'Cookies Homemade', desc:'Crunchy & manis.', images:[
+  //     'https://images.unsplash.com/photo-1604908176997-3b6a5abf9f7d?q=80&w=800'
+  //   ],
+  //   sizes:[{label:'5 pcs',price:15000},{label:'10 pcs',price:28000},{label:'20 pcs',price:50000}]
+  // },
+  // { id: 'p8', name: 'Cupcake Vanilla', desc:'Lembut dengan buttercream.', images:[
+  //     'https://images.unsplash.com/photo-1623428187969-5b3cc23234e0?q=80&w=800'
+  //   ],
+  //   sizes:[{label:'1 pcs',price:12000},{label:'6 pcs',price:55000},{label:'12 pcs',price:100000}]
+  // },
+  // { id: 'p9', name: 'Donut Cokelat', desc:'Glaze cokelat premium.', images:[
+  //     'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=800'
+  //   ],
+  //   sizes:[{label:'1 pcs',price:10000},{label:'6 pcs',price:55000},{label:'12 pcs',price:100000}]
+  // },
+  // { id: 'p10', name: 'Tiramisu', desc:'Kopi & krim mascarpone.', images:[
+  //     'https://images.unsplash.com/photo-1617191519105-89d5d1d8a1e0?q=80&w=800'
+  //   ],
+  //   sizes:[{label:'Cup',price:25000},{label:'Small Box',price:60000},{label:'Big Box',price:120000}]
+  // }
 ];
 
 // Helpers: cart in localStorage
