@@ -170,11 +170,11 @@ th,td{padding:12px;border-bottom:1px solid #eee;text-align:left}
     margin: 0 auto;
   }
 
-  /* Untuk card "Special Hari Ini" biar full width & rata kiri */
+  /* Untuk card "Special Hari Ini" biar full width & rata kiri
   .hero-right.card {
     padding: 16px;
     text-align: left;
-  }
+  } */
 
   /* Judul besar tetap rapi di HP */
   h1 {
