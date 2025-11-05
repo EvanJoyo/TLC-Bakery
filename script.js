@@ -5,7 +5,7 @@ const CART_KEY = 'tlc_bakery_cart_v1';
 // products array (10 products, images from Unsplash as placeholders)
 const products = [
   { id: 'p1', name: 'Brownies Biasa', desc:'Padat & cokelat pekat.', images:[
-      'https://images.unsplash.com/photo-1589712235273-8c43b0db6e1f?q=80&w=800',
+      'https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=800',
     ],
     sizes: [{label:'10x10', price:70000},{label:'10x20',price:100000},{label:'20x20',price:130000}]
   },
@@ -15,7 +15,7 @@ const products = [
     sizes:[{label:'10x10',price:30000},{label:'10x20',price:70000},{label:'20x20',price:130000}]
   },
   { id: 'p3', name: 'Chocolate Croissant', desc:'Lapisan renyah & cokelat.', images:[
-      'https://images.unsplash.com/photo-1565958011705-44a2b3b9b8b2?q=80&w=800'
+      'https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=800'
     ],
     sizes:[{label:'Mini',price:15000},{label:'Medium',price:28000},{label:'Large',price:50000}]
   },
