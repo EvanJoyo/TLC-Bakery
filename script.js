@@ -219,18 +219,45 @@ function renderCart(){
 function sendCartToWhatsApp(){
   const cart = getCart();
   if(cart.length===0){ alert('Keranjang kosong.'); return; }
+
+  const orderNumber = getDailyOrderNumber();
+
   let msg = `Halo TLC Bakery, saya ingin memesan:%0A`;
   let total = 0;
+
   cart.forEach(it => {
     const subtotal = it.price * it.qty;
     total += subtotal;
     msg += `- ${it.name} (${it.size}) x${it.qty} = Rp ${subtotal.toLocaleString('id-ID')}%0A`;
   });
+
   msg += `%0ATotal = Rp ${total.toLocaleString('id-ID')}%0A`;
-  msg += 'Nama: %0AAlamat / Catatan: %0ANomor WA:';
+  msg += `Nama: %0A`;
+  msg += `Alamat / Catatan: %0A`;
+  msg += `Nomor WA: %0A`;
+  msg += `%0AUrutan hari ini: ${orderNumber}%0A`;
+
   const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
   window.open(waLink, '_blank');
 }
+
+function getDailyOrderNumber() {
+  const today = new Date().toISOString().slice(0,10); // yyyy-mm-dd
+  const savedDate = localStorage.getItem('order_date');
+  let number = parseInt(localStorage.getItem('order_number') || '0');
+
+  if (savedDate !== today) {
+    number = 1; // reset
+  } else {
+    number += 1;
+  }
+
+  localStorage.setItem('order_date', today);
+  localStorage.setItem('order_number', number);
+
+  return number;
+}
+
 
 // clear cart
 function clearCart(){
