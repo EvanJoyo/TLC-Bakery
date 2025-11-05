@@ -145,3 +145,61 @@ th,td{padding:12px;border-bottom:1px solid #eee;text-align:left}
     margin-right: 6px !important;
   }
 }
+
+/* ====== MOBILE FIX (HP) ====== */
+@media (max-width: 768px) {
+
+  /* Container lebih sempit & rata kiri */
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  /* Hero jadi 1 kolom, bukan 2 */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Hero kiri dan kanan full width */
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    text-align: left !important;
+    margin: 0 auto;
+  }
+
+  /* Untuk card "Special Hari Ini" biar full width & rata kiri */
+  .hero-right.card {
+    padding: 16px;
+    text-align: left;
+  }
+
+  /* Judul besar tetap rapi di HP */
+  h1 {
+    font-size: 1.8rem;
+    text-align: left !important;
+  }
+
+  /* Text paragraf agar rata kiri */
+  p,
+  .lead,
+  .muted {
+    text-align: left !important;
+  }
+
+  /* Gambar biar otomatis fit */
+  .hero-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+  }
+
+  /* Button biar tidak center */
+  .btn-primary {
+    display: inline-block;
+    text-align: center;
+  }
+}
