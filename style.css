@@ -107,3 +107,41 @@ th,td{padding:12px;border-bottom:1px solid #eee;text-align:left}
     padding:32px 0;
   }
 }
+
+@media(max-width:480px){
+  nav a{
+    font-size:0.85rem;     /* kecil tapi tetap elegan */
+    margin-left:10px;       /* lebih rapat supaya muat */
+  }
+
+  .nav{
+    flex-wrap:nowrap;       /* cegah turun baris */
+  }
+
+  .brand{
+    font-size:2rem;         /* supaya brand + menu muat satu baris */
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap !important;
+    gap: 0 !important;
+  }
+
+  nav a {
+    font-size: 0.75rem !important;
+    margin: 0 6px !important;   /* super rapat */
+    padding: 0 !important;
+    white-space: nowrap !important;  /* PEMAKSA UTAMA */
+  }
+
+  .brand {
+    font-size: 1.6rem !important; /* biar TLC Bakery gak makan banyak tempat */
+    white-space: nowrap !important;
+    margin-right: 6px !important;
+  }
+}
