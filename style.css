@@ -51,9 +51,59 @@ table{width:100%;border-collapse:collapse;margin-top:12px}
 th,td{padding:12px;border-bottom:1px solid #eee;text-align:left}
 .qty-input{width:70px;padding:6px;border-radius:6px;border:1px solid #ddd}
 
-/* responsive */
+/* ======================= */
+/* ✅ RESPONSIVE FIX ONLY  */
+/* ======================= */
 @media(max-width:840px){
-  .hero{flex-direction:column}
-  .hero-right{width:100%}
-  .cart-popup{right:10px;bottom:80px;width:92%}
+  .brand{
+    font-size:2.8rem;          /* penting biar HP ga meledak */
+  }
+  nav a{
+    margin-left:12px;
+    font-size:0.95rem;
+  }
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+  .hero-left{
+    order:2;
+  }
+  .hero-right{
+    width:100%;
+    order:1;
+  }
+  .lead{
+    margin:0 auto;
+  }
+
+  .grid{
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    padding:0 12px 32px;
+  }
+
+  .grid-3{
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  }
+
+  .cart-popup{
+    right:10px;
+    bottom:80px;
+    width:92%;
+  }
+}
+
+/* ✅ Extra kecil (iPhone SE, Android kecil) */
+@media(max-width:480px){
+  .brand{
+    font-size:2.2rem;
+  }
+  nav a{
+    margin-left:10px;
+    font-size:0.9rem;
+  }
+  .hero{
+    padding:32px 0;
+  }
 }
